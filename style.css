@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    background: #1C2230;
+}
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px;
+}
+.container nav .brand-logo img{
+    width: 100px;
+}
+.container nav .nav-links ul{
+    padding: 0;
+    margin: 0;
+}
+.container nav .nav-links ul li{
+    display: inline;
+    padding: 0 15px;
+}
+.container nav .nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+section#intro{
+    padding: 40px 80px;
+    background: url('images/bg-curvy-desktop.svg') bottom no-repeat;
+    text-align: center;
+    color: #fff;
+}
+section#intro .intro-image-container img{
+    width: 500px;
+}
+section#intro h1{
+    max-width: 700px;
+    margin: 10px auto;
+    font-size: 40px;
+}
+section#intro p{
+    max-width: 420px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+section#intro button{
+    padding: 12px 50px;
+    border-radius: 30px;
+    border: none;
+    margin: 20px 0;
+    cursor: pointer;
+    background: linear-gradient(135deg, #53CBD8, #56e9e9);
+    -webkit-text-fill-color: white;
+}
+section#intro button:focus{
+    outline: none;
+}
+
+section#features{
+    padding: 40px 10px;
+    background: #181F2B;
+}
+
+.parent-container{
+    display: flex;
+}
+
+.child-container{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 120px;
+}
+
+.child-container h4{
+    margin-bottom: 10px;
+}
+.child-container p{
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 14px;
+}
+.child-container.productive h1{
+    font-size: 40px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+.child-container.productive a{
+    max-width: 400px;
+    margin: 20px auto !important;
+}
+.child-container.productive{
+    text-align: left;
+}
+@media screen and (max-width: 700px){
+    section#intro .intro-image-container img{
+        width: 400px;
+    }
+    .parent-container{
+        display: block;
+    }
+}
+@media screen and (max-width: 600px){
+    .container nav{
+        padding: 40px 40px;
+    }
+    section#intro .intro-image-container img{
+        width: 380px;
+    }
+    section#intro{
+        padding: 40px 40px;
+    }
+}
+@media screen and (max-width: 500px){
+    .container nav{
+        padding: 40px 20px;
+    }
+    .container nav .brand-logo img{
+        width: 80px;
+    }
+    section#intro .intro-image-container img{
+        width: 350px;
+    }
+    .container nav .nav-links ul li{
+        padding: 0 5px;
+    }
+    .container nav .nav-links ul li a{
+        font-size: 13px;
+    }
+    section#intro{
+        padding: 40px 20px;
+    }
+}
+@media screen and (max-width: 400px){
+    .container nav{
+        padding: 40px 10px;
+    }
+    .container nav .brand-logo img{
+        width: 80px;
+    }
+    section#intro{
+        background: url('images/bg-curvy-mobile.svg') bottom no-repeat;
+    }
+    section#intro .intro-image-container img{
+        width: 250px;
+        margin-bottom: 30px;
+    }
+    .container nav .nav-links ul li{
+        padding: 0 5px;
+    }
+    .container nav .nav-links ul li a{
+        font-size: 13px;
+    }
+    section#intro{
+        padding: 40px 20px;
+    }
+}
