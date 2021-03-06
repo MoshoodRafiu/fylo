@@ -209,9 +209,63 @@ button:focus{
     border: none;
 }
 section#footer{
-    min-height: 100vh;
     background: #0C1524;
-    padding-top: 250px;
+    padding: 300px 20px 20px 20px;
+}
+.child-container.footer{
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+.footer-brand-image{
+    padding: 10px;
+}
+.footer-brand-info{
+    display: flex;
+}
+.footer-brand-info img{
+    height: 15px;
+    margin-right: 10px;
+}
+.footer-brand-info div{
+    font-size: 14px;
+}
+.contact-info{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contact-info img{
+    margin-right: 20px;
+}
+.footer-links{
+    padding: 0;
+    margin: 0;
+}
+.footer-links li{
+    display: block;
+    margin-bottom: 20px;
+}
+.footer-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+.social-links{
+    display: flex;
+}
+.social-link{
+    text-decoration: none;
+}
+.social-link span{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 1px solid #fff;
+    margin-right: 10px;
+    color: #fff;
 }
 @media screen and (max-width: 900px){
     section#intro .intro-image-container img,
